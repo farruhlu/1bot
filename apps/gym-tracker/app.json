@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Зал Трекер",
+    "slug": "gym-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "gymtracker",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.farruhlu.gymtracker",
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "Распознавание речи нужно, чтобы диктовать подходы в зале.",
+        "NSMicrophoneUsageDescription": "Микрофон нужен для голосового ввода подходов."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1A1612",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.farruhlu.gymtracker",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Микрофон нужен для голосового ввода подходов.",
+          "speechRecognitionPermission": "Распознавание речи нужно, чтобы диктовать подходы в зале."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "replace-with-eas-project-id"
+      }
+    }
+  }
+}

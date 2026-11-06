@@ -1,0 +1,5 @@
+
+apps/gym-tracker/node_modules/
+apps/gym-tracker/.expo/
+apps/gym-tracker/dist/
+apps/gym-tracker/web-build/
