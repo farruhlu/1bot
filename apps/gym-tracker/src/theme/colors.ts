@@ -1,0 +1,18 @@
+export const colors = {
+  bg: '#14110F',
+  bgElevated: '#1E1915',
+  bgSoft: '#2A241E',
+  ink: '#F3EDE4',
+  inkMuted: '#B9AFA3',
+  inkFaint: '#7A7168',
+  copper: '#D66A2E',
+  copperBright: '#E8833A',
+  copperDeep: '#A34A1F',
+  sand: '#E6D3B3',
+  moss: '#6F9B6E',
+  rust: '#C24B3B',
+  line: 'rgba(243,237,228,0.12)',
+  danger: '#E05A45',
+  success: '#7CB87A',
+  warning: '#D4A017',
+} as const;
